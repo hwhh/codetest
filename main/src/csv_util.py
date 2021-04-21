@@ -21,6 +21,7 @@ class CsvUtil:
         return str(path)
 
     def convert_csv_to_sql(self):
+        #
         con = sqlite3.connect(self.db_path)
         cur = con.cursor()
         with open(self.csv_path, 'r') as f:
